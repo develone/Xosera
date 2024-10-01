@@ -1,0 +1,22 @@
+10/01/24
+forked https://github.com/XarkLabs/Xosera
+
+git clone https://github.com/develone/Xosera.git -b test-dev
+
+cd Xosera
+
+make upduino
+
+ls -la xosera_gateware/xosera_board_vga.bin 
+
+-rw-r--r-- 1 devel devel 208340 Oct  1 16:04 xosera_gateware/xosera_board_vga.bin
+
+ls -la xosera_gateware/xosera_board_dvi.bin
+
+-rw-r--r-- 1 devel devel 208340 Oct  1 16:04 xosera_gateware/xosera_board_dvi.bin
+
+I think this is using the spi master for updino. 
+
+devel@pi5-90:~/Xosera $ ls rtl/upduino
+ice40_config.vlt  logs  Upduino_pinout.md  upduino_v3.pcf  xosera_upd_aud4_vga_640x480.json  xosera_upd.sv
+
